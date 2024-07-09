@@ -262,7 +262,7 @@ def visualizar_extrato(saldo, numero_saques, LIMITE_SAQUES, *, extrato):
     print("\n============= EXTRATO ===============")
     print("Não foram realizadas movimentações." if not extrato else extrato)
     print(f"\nSaldo: R$ {saldo:.2f}")
-    print(f"Número de saques disponíveis: {LIMITE_SAQUES - numero_saques}" if numero_saques < 3 else f"Sem Saques disponíveis.")
+    print(f"Número de saques disponíveis: {LIMITE_SAQUES - numero_saques}" if numero_saques < 3 else "Sem Saques disponíveis.")
     print("========================================")
 
 def main():
